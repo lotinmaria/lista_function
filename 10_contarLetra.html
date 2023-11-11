@@ -6,10 +6,17 @@
     */
 
     //Entrada
-let 
-
+    let frase = prompt("Informe uma frase")
+    let letra = prompt("Informe uma letra")
+    function conta(a, b) {
+        let letras = 0;
+        for (const item of frase) {
+            if (item == letra) letras++;
+        }
+        return letras;
+    }
     //Processamento
-
+    document.write(`O número de ${letra} na frase é ${conta(frase)}`)
 
     //Saída
 

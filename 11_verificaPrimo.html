@@ -5,8 +5,16 @@
     */
 
     //Entrada
-
-
+    let primo = Number(prompt("Informe um número"))
+    function conta(primo) {
+        let divisao = 0;
+        for (let i = 1; i <= primo; i++) {
+            if (primo % i == 0) divisao++
+        }
+        if (divisores == 2) return "é primo";
+        else return " não é primo "
+    }
+    document.write(`O número ${primo} ${conta(primo)}`)
     //Processamento
 
 

@@ -6,8 +6,12 @@
     */
 
     //Entrada
-
-
+    let peso = Number(prompt("Informe seu peso"))
+    let altura = Number(prompt("Informe sua altura"))
+    function imc(b, a) {
+        return b / a ** 2
+    }
+    document.write(imc(peso, altura))
     //Processamento
 
 

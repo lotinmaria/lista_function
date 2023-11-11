@@ -7,8 +7,14 @@
     */
 
     //Entrada
-
-
+    let palavra = prompt("Informe uma palavra");
+    let vogais = 0
+    function lotin(b) {
+        for (const letra of palavra)
+            if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u') vogais++
+        return vogais;
+    }
+    document.write(`O número de vogais é ${lotin(b)}`)
     //Processamento
 
 
